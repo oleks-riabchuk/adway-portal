@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import './vars';
+@import './mixins';
+
+@import './main';
+
+@import './components/sidebar';
+@import './components/main';
+@import './components/search';
+@import './components/preview';
+@import './components/spinner';
+@import './components/forms';
+
+@import './pages/index';
+@import './pages/update-ad';

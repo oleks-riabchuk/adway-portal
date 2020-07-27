@@ -1,0 +1,19 @@
+@mixin customScroll {
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+        
+    }
+    
+    &::-webkit-scrollbar-track {
+        display: none;
+    }
+}
+
+@mixin responsive($breakpoint) {
+    @media only screen and (max-width:$breakpoint) {
+        @content;
+    }
+}

@@ -1,0 +1,104 @@
+.main {
+    flex: 1;
+    padding-top: 60px;
+    max-height: 100%;
+    overflow-y: scroll;
+    // @include customScroll;
+    
+    &__content {
+        padding: 0 40px;
+        max-width: 560px;
+        position: relative;
+
+        &.full {
+            max-width: none;
+        }
+
+        &.with-calendar {
+            max-width: 1060px; 
+
+            & .calendar {
+                position: absolute;
+                top: 0;
+                right: -40px;
+            }
+
+            & button {
+                width: 160px;
+                height: 36px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 15px 0 12px;
+
+                & .icon {
+                    display: flex;
+                    align-items: center;
+
+                    & svg {
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }   
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 34px;
+        letter-spacing: 0.04em;
+        color: #000;
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+        color: #B5BABE;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        width: 100%;
+        list-style: none;
+        margin-top: 24px;
+
+        &--item {
+            padding: 9px 40px;
+            cursor: pointer;
+
+            &:hover {
+                background: rgba($color: $colorBlue, $alpha: 0.1);
+            }
+
+            &.active {
+                background: rgba($color: $colorBlue, $alpha: 0.1);
+            }
+
+            & .heading {
+                margin-bottom: 8px;
+                font-size: 16px;
+            }
+
+            & .text {
+                font-size: 12px;
+            }
+
+            & .top {
+                background: rgba(64, 82, 128, 0.1);
+                height: 20px;
+                width: 309px;
+                margin-bottom: 8px;
+            }
+
+            & .bottom {
+                background: rgba(64, 82, 128, 0.1);
+                height: 20px;
+                width: 502px;
+            }
+        }
+    }
+}

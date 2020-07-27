@@ -1,0 +1,77 @@
+.form-group {
+    margin-bottom: 24px;
+
+    & input,
+    & textarea,
+    & select {
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #E5E7FA;
+        border-radius: 6px;
+        padding: 14px 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        color: #1A051D;
+        resize: none;
+
+        &::placeholder {
+            color: #D0C9D6;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+
+    & .select-container {
+        position: relative;
+
+        &::after {
+            content: " ";
+            background-image: url('../public/images/icons/arrow_down.svg');
+            position: absolute;
+            top: calc(50% - 1px);
+            right: 23px;
+            width: 9.65px;
+            height: 6.46px;
+        }
+    }
+
+    & select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        position: relative;
+    }   
+
+    & .form-flex-container {
+        display: flex;
+    }
+
+    & .form-half {
+        width: calc((100% - 12px) / 2);
+        margin-right: 12px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    & .button-container {
+        width: 100%;
+
+        &.right {
+            text-align: right;
+        }
+    }
+
+    & .btn {
+        width: 194px;
+        height: 48px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 22px;
+        color: #fff;
+    }
+}

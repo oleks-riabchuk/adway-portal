@@ -1,0 +1,24 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:sass": "node-sass -r --output-style compressed sass/style.scss -o styles",
+    "watch:sass": "npm run build:sass && npm run build:sass -- -w",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
+  },
+  "dependencies": {
+    "next": "9.3.5",
+    "node-fetch": "^2.6.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-dropzone": "^11.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

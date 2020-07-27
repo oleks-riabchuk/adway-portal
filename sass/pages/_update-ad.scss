@@ -1,0 +1,86 @@
+.update-ad {
+
+    &__phone {
+        display: block;
+        margin: 40px auto;
+    }
+
+    &__form {
+
+        & .form-group.files {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__files {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__file {
+        height: 126px;
+        width: 126px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid rgba(105, 121, 248, 0.3);
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 12px;
+        overflow: hidden;
+
+        &:not(:last-child) {
+            margin-right: 12px;
+        }
+
+        & img.preview-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        & .image-uploaded {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 24px;
+            width: 24px;
+            background-color: $colorBlue;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+
+        &.text {
+            border: 1px dashed rgba(105, 121, 248, 0.3);
+            padding: 13px;
+        }
+
+        &.active {
+            background-color: #ECEEF2;
+        }
+
+        & p {
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 12px;
+            color: #818CA1;
+
+            & span.blue {
+                color: $colorBlue;
+            }
+        }
+
+        & input {
+            display: none;
+        }
+    }
+}
